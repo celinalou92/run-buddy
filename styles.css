@@ -15,6 +15,14 @@ body {
     flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #39a6b2;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("./images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
   header h1 {
@@ -65,7 +73,8 @@ section {
   flex-wrap: wrap;
   background-image: url("./images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .section-title {
@@ -105,10 +114,12 @@ section {
 .hero-form {
  border: solid 3px #024e76;
  color: #024e76;
- background-color: #fce138;
+ background-color: rgba(252, 225, 56, 0.8);
  padding: 20px;
  width: 40%;
  margin: 3.5%;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ border-radius: 15px;
 }
 
 .hero-form p {
@@ -122,6 +133,7 @@ section {
 
 .form-input {
   border: 1px solid #024e76;
+  border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -140,6 +152,7 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
 }
 /* HERO STYLES END */
 
@@ -302,6 +315,7 @@ contact-form input, .contact-form textarea {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
 }
 
 .contact-form button {
@@ -312,6 +326,7 @@ contact-form input, .contact-form textarea {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 /* REACH OUT STYLES END */
@@ -367,6 +382,7 @@ color: #024e76;
   header h1 {
     width: 100%;
     text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   header nav ul {
@@ -377,6 +393,7 @@ color: #024e76;
 
   header nav ul li a {
     font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   footer h2, footer div {
@@ -390,6 +407,11 @@ color: #024e76;
   .hero-cta {
     text-align: center;
   }
+
+  .hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
   .section-title {
     width: 80%;
   }
@@ -432,6 +454,13 @@ color: #024e76;
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    position: relative;
+  }
+}
+
+
 @media screen and (max-width: 575px) {
   .hero-form button {
     width: 100%;
