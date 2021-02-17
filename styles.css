@@ -55,6 +55,12 @@ body {
     font-size: 1.55vw;
   }
 
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
 
 
 
@@ -140,6 +146,12 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -154,6 +166,12 @@ section {
   font-size: 16px;
   border-radius: 10px;
 }
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+
 /* HERO STYLES END */
 
 /* What we do section */
@@ -176,11 +194,15 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -271,7 +293,7 @@ section {
   color: #fce138;
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -306,7 +328,7 @@ section {
   color: #fce138;
 }
 
-contact-form input, .contact-form textarea {
+.contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -316,7 +338,18 @@ contact-form input, .contact-form textarea {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, .75)
 }
+
+
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+
+
+
 
 .contact-form button {
   width: 100%;
@@ -327,6 +360,11 @@ contact-form input, .contact-form textarea {
   padding: 15px 0;
   font-size: 16px;
   border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 /* REACH OUT STYLES END */
